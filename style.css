@@ -1,0 +1,51 @@
+:root {
+  --color-background-initial: #f1f1f1;
+  --color-background-event: #666;
+  --color-hover: #57dee8;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  background: var(--color-background-initial);
+}
+html body .hamburger__container {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+html body .hamburger__container .hamburger {
+  width: 100%;
+  height: 12%;
+  background: var(--color-background-event);
+  border-radius: 1rem;
+}
+
+html body .hamburger__container.active--color .hamburger {
+  animation: color--burger 1s ease-out forwards;
+}
+
+/* @keyframes{
+
+} */
+
+/*# sourceMappingURL=style.css.map */
